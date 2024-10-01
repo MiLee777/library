@@ -1,38 +1,80 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Forum", sans-serif;
+  --background-dark: #0c0c0e;
+  --text-black: #000;
+  --text-white: #fff;
+  --text-gold: #bb945f;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 .App {
-  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ========================= HEADER ========================= */
+.header {
+  background-color: var(--background-dark);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header__container {
+  padding: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__logo {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 167%;
+  letter-spacing: 0.02em;
+  color: var(--text-white);
+}
+
+.header__nav,
+.header__menu {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header__nav {
+  column-gap: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header__menu {
+  column-gap: 30px;
+}
+
+.header__link > a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 250%;
+  color: var(--text-white);
+}
+
+.hamb {
+  display: none;
 }
