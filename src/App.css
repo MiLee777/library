@@ -72,9 +72,39 @@ li {
   font-weight: 400;
   font-size: 20px;
   line-height: 250%;
+  letter-spacing: 0.02em;
   color: var(--text-white);
 }
 
 .hamb {
   display: none;
+}
+
+/* ========================= WELCOME ========================= */
+.welcome {
+  min-height: 600px;
+  background: url(/src/assets/images/welcome.png);
+  overflow: hidden;
+}
+
+.welcome__container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.welcome__content {
+  margin: 220px 840px 160px 0;
+  padding: 35px 120px;
+  background-color: var(--background-dark);
+}
+
+.welcome__title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 125%;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-white);
 }
