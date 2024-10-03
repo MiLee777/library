@@ -29,15 +29,20 @@ li {
 }
 
 .App {
+  width: 100%;
+}
+
+.header,
+.welcome {
+  background-color: var(--background-dark);
+}
+
+.container {
   max-width: 1440px;
   margin: 0 auto;
 }
 
 /* ========================= HEADER ========================= */
-.header {
-  background-color: var(--background-dark);
-}
-
 .header__container {
   padding: 20px;
   display: flex;
@@ -81,13 +86,10 @@ li {
 }
 
 /* ========================= WELCOME ========================= */
-.welcome {
+.welcome__container {
   min-height: 600px;
   background: url(/src/assets/images/welcome.png);
   overflow: hidden;
-}
-
-.welcome__container {
   display: flex;
   justify-content: flex-start;
 }
@@ -107,4 +109,64 @@ li {
   text-transform: uppercase;
   text-align: center;
   color: var(--text-white);
+}
+
+/* ========================= ABOUT ========================= */
+.section {
+  padding: 20px 20px 40px;
+}
+
+.about__container,
+.title__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__container {
+  row-gap: 40px;
+}
+
+.title__container {
+  row-gap: 20px;
+}
+
+.title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: var(--background-dark);
+}
+
+.title__line {
+  width: 50px;
+  height: 1px;
+  background-color: var(--background-dark);
+}
+
+.about__slider {
+  display: grid;
+  row-gap: 20px;
+}
+
+.about__par {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  text-align: center;
+  color: var(--text-black);
+}
+
+.slider__container {
+  display: flex;
+}
+
+
+.slider__row {
+  display: flex;
+  column-gap: 25px;
 }

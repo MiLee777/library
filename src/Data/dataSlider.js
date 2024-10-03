@@ -1,0 +1,1 @@
+export const dataSlider = ['woman', 'sculptures', 'bookshelves', 'ladder', 'arch'];
