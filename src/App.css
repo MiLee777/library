@@ -163,10 +163,18 @@ li {
 
 .slider__container {
   display: flex;
+  justify-content: center;
 }
 
-
-.slider__row {
-  display: flex;
-  column-gap: 25px;
+.dot {
+  border-radius: 50px;
+  width: 16px;
+  height: 16px;
+  background: var(--background-dark);
+  cursor: pointer;
 }
+
+.dot_active {
+  background: var(--text-gold);
+}
+
