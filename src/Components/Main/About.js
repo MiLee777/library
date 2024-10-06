@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -36,8 +35,10 @@ export const About = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 2
+    slidesToScroll: 1,
+    arrows: false,
   };
+
 
   return (
     <section className="section">
