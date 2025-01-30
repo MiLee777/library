@@ -204,7 +204,7 @@ li {
 
 /* ========================= FAVORITE ========================= */
 .favorites__section {
-  margin: 40px;
+  margin-top: 50px;
 }
 
 .favorites__container {
@@ -238,8 +238,8 @@ li {
 
 .category__fake {
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   border: 2px solid var(--text-black);
   position: relative;
   border-radius: 50%;
@@ -270,4 +270,88 @@ li {
   font-size: 20px;
   color: var(--text-black);
   text-transform: capitalize;
+}
+
+.favorites__books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 260px;
+}
+
+.book__container {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  border: 1px solid #000;
+  width: 550px;
+  height: 555px;
+  position: relative;
+}
+
+.staff-picks {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: 0.1em;
+  color: var(--text-black);
+}
+
+.staff-picks__line {
+  width: 50px;
+  height: 1px;
+  border: none;
+  background-color: var(--text-gold);
+}
+
+.book__name,
+.book__author,
+.book__description {
+  font-family: var(--font-family);
+  font-size: 15px;
+  line-height: 267%;
+  letter-spacing: 0.13em;
+  color: var(--text-black);
+}
+
+.book__name {
+  text-transform: uppercase;
+}
+
+.book__name,
+.book__author {
+  font-weight: 700;
+}
+
+.book__description {
+  width: 355px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.book__btn {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+}
+
+.book__btn button {
+  padding: 7px 25px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #0c0c0e;
+  border: 1px solid var(--text-black);
+  border-radius: 2px;
+  background: none;
+}
+
+.book__img {
+  position: absolute;
+  right: -40px;
+  bottom: -1px;
+  display: flex;
 }
