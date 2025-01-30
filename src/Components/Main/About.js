@@ -42,7 +42,7 @@ export const About = () => {
 
   return (
     <section className="section">
-      <div className="about__container container">
+      <div className="container">
         <div className="title__container">
           <h2 className="title">About</h2>
           <hr className="title__line"></hr>
