@@ -1,4 +1,12 @@
+import { useState } from "react"
+
 export const Books = ({ book }) => {
+
+  const [buyBook, setBuyBook] = useState(null);
+
+  // const handleClickBuyBook = () => {
+
+  // }
   return (
     <div className="book__container">
       <div className="book__staff-picks">
@@ -11,7 +19,7 @@ export const Books = ({ book }) => {
       </div>
       <p className="book__description">{book.description}</p>
       <div className="book__btn">
-        <button>Buy</button>
+        <button>{!buyBook ? 'Buy' : 'Own'}</button>
       </div>
       <div className="book__img">
         <img src={book.img} alt="book" />
