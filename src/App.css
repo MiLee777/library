@@ -272,6 +272,10 @@ li {
   text-transform: capitalize;
 }
 
+.category__text_selected {
+  font-weight: 700;
+}
+
 .favorites__books {
   display: flex;
   flex-wrap: wrap;

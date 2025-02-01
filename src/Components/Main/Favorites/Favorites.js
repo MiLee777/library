@@ -1,8 +1,11 @@
+import { useSelector } from "react-redux";
 import { dataBooks } from "../../../Data/dataBooks";
 import { Books } from "./Books";
-import { Category } from "./Category";
+import { Categories } from "./Categories";
+import { getSelectedCategory } from "../../../Redux/booksSlice";
 
 export const Favorites = () => {
+  const selectedCategory = useSelector(getSelectedCategory);
   return (
     <section className="favorites__section section">
       <div className="favorites__container container">
@@ -13,11 +16,13 @@ export const Favorites = () => {
         <p className="favorites__text_bold">Pick favorites of season</p>
         <div className="favorites__category">
           {
-            ["winter", "spring", "summer", "autumn"].map((category) => <Category category={category} />)
+            ["winter", "spring", "summer", "autumn"].map((category) => <Categories category={category} key={category} />)
           }
         </div>
         <div className="favorites__books">
-          {dataBooks.map((book) => <Books book={ book } key={ book.id } />)}
+          {dataBooks
+          .filter((book) => selectedCategory === book.category)
+          .map((book) => <Books book={ book } key={ book.id } />)}
         </div>
 
       </div>
