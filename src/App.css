@@ -339,6 +339,9 @@ button {
 }
 
 .book__btn {
+  display: flex;
+  align-items: center;
+  column-gap: 200px;
   position: absolute;
   left: 20px;
   bottom: 15px;
@@ -355,6 +358,14 @@ button {
   border: 1px solid var(--text-black);
   border-radius: 2px;
   background: none;
+}
+
+.book__price {
+  font-family: var(--font-family);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  color: var(--text-black);
 }
 
 .book__img {

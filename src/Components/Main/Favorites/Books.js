@@ -20,6 +20,7 @@ export const Books = ({ book }) => {
       <p className="book__description">{book.description}</p>
       <div className="book__btn">
         <button>{!buyBook ? 'Buy' : 'Own'}</button>
+        <p className="book__price">${book.price}</p>
       </div>
       <div className="book__img">
         <img src={book.img} alt="book" />
