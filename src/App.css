@@ -89,6 +89,19 @@ button {
   display: none;
 }
 
+.basket {
+  position: relative;
+}
+
+.basket span {
+  color: var(--text-black);
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
 /* ========================= WELCOME ========================= */
 .welcome__container {
   min-height: 600px;
@@ -137,6 +150,9 @@ button {
   line-height: 100%;
   letter-spacing: 0.05em;
   text-transform: capitalize;
+}
+
+.title__section {
   color: var(--background-dark);
 }
 
@@ -153,14 +169,17 @@ button {
   row-gap: 20px;
 }
 
-.about__par {
+.par {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
   line-height: 200%;
-  letter-spacing: 0.013em;
   text-align: center;
   color: var(--text-black);
+}
+
+.about__par {
+  letter-spacing: 0.013em;
 }
 
 .slider__img {
@@ -373,4 +392,45 @@ button {
   right: -40px;
   bottom: -1px;
   display: flex;
+}
+
+/* ========================= COFFEE SHOP ========================= */
+.coffee-shop__par {
+  letter-spacing: 0.11em;
+}
+
+.coffee-shop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.coffee-shop__menu {
+  width: 438px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.coffee-shop__title {
+  color: var(--text-gold);
+  text-align: center;
+}
+
+.coffee-shop__category {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coffee-shop__price {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.coffee-shop__line {
+  border: 1px solid var(--text-gold);
+  width: 100px;
+  height: 0;
+
 }

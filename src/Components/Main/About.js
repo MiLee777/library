@@ -44,11 +44,11 @@ export const About = () => {
     <section className="section">
       <div className="container">
         <div className="title__container">
-          <h2 className="title">About</h2>
+          <h2 className="title title__section">About</h2>
           <hr className="title__line"></hr>
         </div>
         <div className="about__slider">
-          <p className="about__par">The Brooklyn Library is a free workspace,
+          <p className="par about__par">The Brooklyn Library is a free workspace,
             a large number of books and a cozy coffee shop inside
           </p>
           <div className="slider__container">

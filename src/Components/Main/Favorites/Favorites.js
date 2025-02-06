@@ -10,7 +10,7 @@ export const Favorites = () => {
     <section className="favorites__section section">
       <div className="favorites__container container">
         <div className="title__container">
-          <h2 className="title">Favorites</h2>
+          <h2 className="title title__section">Favorites</h2>
           <hr className="title__line"></hr>
         </div>
         <p className="favorites__text_bold">Pick favorites of season</p>
@@ -24,7 +24,6 @@ export const Favorites = () => {
           .filter((book) => selectedCategory === book.category)
           .map((book) => <Books book={ book } key={ book.id } />)}
         </div>
-
       </div>
     </section>
   )

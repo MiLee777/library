@@ -21,8 +21,8 @@ function App() {
             <Link to="/library" className="header__logo">Brooklyn Public Library</Link>
             <nav className="header__nav">
               <HeaderMenu />
-              <Link to="/basket">
-                <BsBasket3Fill size="25px" color="#fff" />
+              <Link to="/basket" className="basket">
+                <BsBasket3Fill size="28px" color="#fff" />
                 <span>5</span>
               </Link>
               <Registration />
