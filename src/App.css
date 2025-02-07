@@ -174,11 +174,11 @@ button {
   font-weight: 400;
   font-size: 20px;
   line-height: 200%;
-  text-align: center;
   color: var(--text-black);
 }
 
 .about__par {
+  text-align: center;
   letter-spacing: 0.013em;
 }
 
@@ -396,6 +396,7 @@ button {
 
 /* ========================= COFFEE SHOP ========================= */
 .coffee-shop__par {
+  text-align: center;
   letter-spacing: 0.11em;
 }
 
@@ -432,5 +433,33 @@ button {
   border: 1px solid var(--text-gold);
   width: 100px;
   height: 0;
+}
 
+/* ========================= CONTACTS ========================= */
+.contacts__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__info-text,
+.contacts__info-tel {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__info-text {
+  row-gap: 40px;
+}
+
+.contacts__info-tel {
+  row-gap: 20px;
+}
+
+.contacts__par {
+  letter-spacing: 0.11em;
+}
+
+.contacts__par-bold {
+  font-weight: 700;
+  color: var(--text-black);
 }
