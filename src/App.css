@@ -565,3 +565,57 @@ button {
   font-size: 10px;
   letter-spacing: 0.1em;
 }
+
+/* ========================= FOOTER ========================= */
+.footer {
+  background-color: var(--background-dark);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.footer__frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  color: var(--text-white);
+}
+
+.footer__text-right {
+  text-align: right;
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 15px;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__links p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  color: var(--text-white);
+}

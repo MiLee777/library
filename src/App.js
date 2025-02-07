@@ -11,6 +11,7 @@ import { BsBasket3Fill } from "react-icons/bs";
 import { Registration } from './Components/Registration/Registration';
 import { BurgerMenu } from './Components/HeaderMenu/BurgerMenu';
 import { Basket } from './Components/Basket';
+import { Footer } from './Components/Footer';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/basket" element={<Basket />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 }
