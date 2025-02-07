@@ -3,6 +3,7 @@ import { Welcome } from "./Welcome";
 import { Favorites } from "./Favorites/Favorites";
 import { CoffeeShop } from "./Shop/CoffeeShop";
 import { Contacts } from "./Contacts";
+import { DigitalCards } from "./Cards/DigitalCards";
 
 export const Main = () => {
   return (
@@ -12,6 +13,7 @@ export const Main = () => {
       <Favorites />
       <CoffeeShop />
       <Contacts />
+      <DigitalCards />
     </main>
   )
 }

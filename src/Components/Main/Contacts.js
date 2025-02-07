@@ -20,18 +20,17 @@ export const Contacts = () => {
             </div>
           </div>
           <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.015977047854!2d-73.99387788801738!3d40.69564577127684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a49b649b8c3%3A0x6342a2291cea2e!2zMjg2IENhZG1hbiBQbHogVywgQnJvb2tseW4sIE5ZIDExMjAxLCDQodCo0JA!5e0!3m2!1sru!2sth!4v1738926302232!5m2!1sru!2sth" 
-            width="687" 
-            height="414" 
-            style={{border: "none"}} 
-            allowFullScreen="" 
-            loading="lazy" 
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Google Maps Location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.015977047854!2d-73.99387788801738!3d40.69564577127684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a49b649b8c3%3A0x6342a2291cea2e!2zMjg2IENhZG1hbiBQbHogVywgQnJvb2tseW4sIE5ZIDExMjAxLCDQodCo0JA!5e0!3m2!1sru!2sth!4v1738926302232!5m2!1sru!2sth"
+              width="687"
+              height="414"
+              style={{ border: "none" }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Maps Location">
             </iframe>
           </div>
         </div>
-
       </div>
     </section>
   )

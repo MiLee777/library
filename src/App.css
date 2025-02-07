@@ -463,3 +463,105 @@ button {
   font-weight: 700;
   color: var(--text-black);
 }
+
+/* ========================= DIGITAL LIBRARY CARDS ========================= */
+.find-card,
+.digital-card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find-card {
+  row-gap: 30px;
+}
+
+.card__title,
+.digital-card__input label input {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.02em;
+}
+
+.card__title {
+  color: var(--text-black);
+}
+
+.find-card__title {
+  font-family: var(--font-family);
+}
+
+.digital-card__container {
+  padding: 20px 20px 30px;
+  row-gap: 20px;
+  border: 3px solid var(--text-gold);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.digital-card__box {
+  padding: 20px 20px 25px;
+  background: var(--text-gold);
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.digital-card__title {
+  font-family: var(--second-family);
+  line-height: 167%;
+}
+
+.digital-card__input label input {
+  padding-left: 20px;
+  width: 520px;
+  height: 66px;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--second-family);
+  line-height: 167%;
+  color: #8e8e8e;
+}
+
+.digital-card__btn {
+  border: 1px solid var(--background-dark);
+  border-radius: 2px;
+  background: none;
+  font-family: var(--font-family);
+  font-weight: 700;
+  text-align: center;
+  color: var(--background-dark);
+}
+
+.find-card__btn button {
+  padding: 10px 40px;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+
+.get-card {
+  width: 456px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+.get-card__title {
+  text-align: center;
+}
+
+.get-card__par {
+  letter-spacing: 0.02em;
+  text-align: right;
+}
+
+.get-card__btns {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+}
+
+.get-card__btns button {
+  padding: 7px 15px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
