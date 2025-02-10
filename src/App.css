@@ -619,3 +619,60 @@ button {
   letter-spacing: 0.1em;
   color: var(--text-white);
 }
+
+/* ========================= BASKET ========================= */
+.basket__container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--text-white);
+}
+
+.basket__info,
+.info-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.basket__info {
+  row-gap: 50px;
+}
+
+.basket__info-content,
+.basket__info-title {
+  display: flex;
+  align-items: center;
+}
+
+.basket__info-content {
+  column-gap: 150px;
+}
+
+.basket__info-title {
+  column-gap: 20px;
+}
+
+.basket__info-title img {
+  width: 100px;
+}
+
+.info-title {
+  row-gap: 10px;
+}
+
+.quantity__container {
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+}
+
+.quantity__btn {
+  border: none;
+  background: #dfdfdf;
+}
+
+.quantity__span {
+  padding: 10px 17px;
+  font-family: var(--font-family);
+  font-size: 20px;
+  color: var(--text-black);
+
+}

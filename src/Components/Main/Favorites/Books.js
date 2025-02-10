@@ -1,12 +1,12 @@
 import { useState } from "react"
+import { useDispatch } from "react-redux";
+import { addItemToCart } from "../../../Redux/cartSlice";
 
 export const Books = ({ book }) => {
 
   const [buyBook, setBuyBook] = useState(null);
+  const dispatch = useDispatch();
 
-  // const handleClickBuyBook = () => {
-
-  // }
   return (
     <div className="book__container">
       <div className="book__staff-picks">
@@ -19,7 +19,7 @@ export const Books = ({ book }) => {
       </div>
       <p className="book__description">{book.description}</p>
       <div className="book__btn">
-        <button>{!buyBook ? 'Buy' : 'Own'}</button>
+        <button onClick={() => {dispatch(addItemToCart({book}))}}>{!buyBook ? 'Buy' : 'Own'}</button>
         <p className="book__price">${book.price}</p>
       </div>
       <div className="book__img">

@@ -4,6 +4,7 @@ import { Favorites } from "./Favorites/Favorites";
 import { CoffeeShop } from "./Shop/CoffeeShop";
 import { Contacts } from "./Contacts";
 import { DigitalCards } from "./Cards/DigitalCards";
+import { Footer } from "../Footer";
 
 export const Main = () => {
   return (
@@ -14,6 +15,7 @@ export const Main = () => {
       <CoffeeShop />
       <Contacts />
       <DigitalCards />
+      <Footer />
     </main>
   )
 }

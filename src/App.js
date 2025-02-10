@@ -10,8 +10,7 @@ import { HeaderMenu } from './Components/HeaderMenu/HeaderMenu';
 import { BsBasket3Fill } from "react-icons/bs";
 import { Registration } from './Components/Registration/Registration';
 import { BurgerMenu } from './Components/HeaderMenu/BurgerMenu';
-import { Basket } from './Components/Basket';
-import { Footer } from './Components/Footer';
+import { Basket } from './Components/Cart/Basket';
 
 function App() {
   return (
@@ -33,10 +32,9 @@ function App() {
         </header>
         <Routes>
           <Route path="/library" element={<Main />} />
-          <Route path="/basket" element={<Basket />} />
+          <Route path="/basket" element={ <Basket />} />
         </Routes>
       </Router>
-      <Footer />
     </div>
   );
 }
