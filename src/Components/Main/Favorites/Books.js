@@ -1,11 +1,19 @@
-import { useState } from "react"
-import { useDispatch } from "react-redux";
-import { addItemToCart } from "../../../Redux/cartSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { addItemToCart, getCartItems, removeItemToBooks } from "../../../Redux/cartSlice";
 
 export const Books = ({ book }) => {
-
-  const [buyBook, setBuyBook] = useState(null);
   const dispatch = useDispatch();
+
+  const cartItems = useSelector(getCartItems);
+  const ownedItem = cartItems.some(item => item.bookId === book.id);
+
+  const handleToggleCart = () => {
+    if (ownedItem) {
+      dispatch(removeItemToBooks({ bookId: book.id }));
+    } else {
+      dispatch(addItemToCart({ book }));
+    }
+  }
 
   return (
     <div className="book__container">
@@ -19,8 +27,12 @@ export const Books = ({ book }) => {
       </div>
       <p className="book__description">{book.description}</p>
       <div className="book__btn">
-        <button onClick={() => {dispatch(addItemToCart({book}))}}>{!buyBook ? 'Buy' : 'Own'}</button>
-        <p className="book__price">${book.price}</p>
+        <button 
+        className={ownedItem ? "book__btn-own" : "book__btn-buy"}
+        onClick={handleToggleCart}>
+          {ownedItem ? "Own" : "Buy"}
+          </button>
+        <p className="book__price">${(book.price).toFixed(2)}</p>
       </div>
       <div className="book__img">
         <img src={book.img} alt="book" />

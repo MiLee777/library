@@ -7,17 +7,24 @@ const cartSlice = createSlice({
   },
   reducers: {
     addItemToCart: (state, action) => {
-      console.log(action.payload);
+      const timeId = new Date().getTime();
       const existingItem = state.cartItems.find((item) => item.bookId === action.payload.book.id);
       if (existingItem) {
         existingItem.quantity += 1;
       } else {
         state.cartItems.push({
-        bookId: action.payload.book.id,
-        totalPrice: action.payload.book.price,
-        quantity: 1
-      })
+          id: timeId,
+          bookId: action.payload.book.id,
+          totalPrice: action.payload.book.price,
+          quantity: 1
+        })
       }
+    },
+    removeItemToCart: (state, action) => {
+      state.cartItems = state.cartItems.filter((item) => item.id !== action.payload.itemId)
+    },
+    removeItemToBooks: (state, action) => {
+      state.cartItems = state.cartItems.filter((item) => item.bookId !== action.payload.bookId)
     },
     updateItemQuantity: (state, action) => {
       const item = state.cartItems.find(item => item.bookId === action.payload.bookId);
@@ -25,7 +32,10 @@ const cartSlice = createSlice({
         item.quantity = action.payload.quantity;
         item.totalPrice = item.quantity * action.payload.price;
       }
-    }
+    },
+    removeAllItemstoCart: (state, action) => {
+      state.cartItems = [];
+    },
   },
 })
 
@@ -40,5 +50,5 @@ export const getTotalQuantity = state => {
 }
 
 export const getCartItems = state => state.cart.cartItems;
-export const { addItemToCart, updateItemQuantity} = cartSlice.actions;
+export const { addItemToCart, updateItemQuantity, removeItemToCart, removeItemToBooks, removeAllItemstoCart } = cartSlice.actions;
 export default cartSlice.reducer;

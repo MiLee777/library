@@ -7,10 +7,10 @@ import {
 } from "react-router-dom";
 import { Main } from './Components/Main/Main';
 import { HeaderMenu } from './Components/HeaderMenu/HeaderMenu';
-import { BsBasket3Fill } from "react-icons/bs";
 import { Registration } from './Components/Registration/Registration';
 import { BurgerMenu } from './Components/HeaderMenu/BurgerMenu';
 import { Basket } from './Components/Cart/Basket';
+import { BasketIcon } from './Components/Cart/BasketIcon';
 
 function App() {
   return (
@@ -22,8 +22,7 @@ function App() {
             <nav className="header__nav">
               <HeaderMenu />
               <Link to="/basket" className="basket">
-                <BsBasket3Fill size="28px" color="#fff" />
-                <span>5</span>
+                <BasketIcon />
               </Link>
               <Registration />
               <BurgerMenu />

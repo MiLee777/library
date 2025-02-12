@@ -373,10 +373,19 @@ button {
   font-size: 10px;
   letter-spacing: 0.1em;
   text-align: center;
-  color: #0c0c0e;
-  border: 1px solid var(--text-black);
   border-radius: 2px;
   background: none;
+  transition: .3s ease-in-out;
+}
+
+.book__btn-buy {
+  color: var(--background-dark);
+  border: 1px solid var(--text-black);
+}
+
+.book__btn-own {
+  color: var(--text-gold);
+  border: 1px solid var(--text-gold);
 }
 
 .book__price {
@@ -621,14 +630,15 @@ button {
 }
 
 /* ========================= BASKET ========================= */
-
 .basket__container {
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   background-color: var(--text-white);
 }
 
 .basket__info,
+.basket__info-general,
 .info-title {
   display: flex;
   flex-direction: column;
@@ -638,12 +648,22 @@ button {
   row-gap: 50px;
 }
 
+.basket__info-clear-all {
+  column-gap: 10px;
+}
+
+.basket__info-clear-all,
 .basket__info-content,
 .basket__info-title,
 .info__price,
 .basket__info-general div {
   display: flex;
   align-items: center;
+}
+
+.basket__info-clear-all {
+  column-gap: 10px;
+  cursor: pointer;
 }
 
 .basket__info-content {
@@ -686,6 +706,7 @@ button {
 
 .basket__info-general {
   width: 330px;
+  row-gap: 15px;
 }
 
 .basket__info-general div {
@@ -698,4 +719,9 @@ button {
   font-size: 28px;
   color: var(--text-black);
   text-transform: capitalize;
+}
+
+.basket__info-remove-btn {
+  padding: 10px;
+  cursor: pointer;
 }
