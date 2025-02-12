@@ -621,6 +621,7 @@ button {
 }
 
 /* ========================= BASKET ========================= */
+
 .basket__container {
   display: flex;
   justify-content: space-between;
@@ -638,13 +639,16 @@ button {
 }
 
 .basket__info-content,
-.basket__info-title {
+.basket__info-title,
+.info__price,
+.basket__info-general div {
   display: flex;
   align-items: center;
 }
 
 .basket__info-content {
-  column-gap: 150px;
+  width: 1000px;
+  justify-content: space-between;
 }
 
 .basket__info-title {
@@ -657,6 +661,10 @@ button {
 
 .info-title {
   row-gap: 10px;
+}
+
+.info__price {
+  column-gap: 50px;
 }
 
 .quantity__container {
@@ -674,5 +682,20 @@ button {
   font-family: var(--font-family);
   font-size: 20px;
   color: var(--text-black);
+}
 
+.basket__info-general {
+  width: 330px;
+}
+
+.basket__info-general div {
+  justify-content: space-between;
+}
+
+.basket__info-general-title  {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--text-black);
+  text-transform: capitalize;
 }

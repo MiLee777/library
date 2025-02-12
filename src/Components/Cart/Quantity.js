@@ -1,7 +1,4 @@
-import { useState } from "react";
-
-export const Quantity = () => {
-  const [count, setCount] = useState(1);
+export const Quantity = ({ count, setCount }) => {
 
   const handleClickCountAdd = () => {
     const newQuantity = count + 1;
@@ -9,7 +6,7 @@ export const Quantity = () => {
   }
 
   const handleClickCountRemove = () => {
-    if(count <= 1) return;
+    if (count <= 1) return;
     const newQuantity = count - 1;
     setCount(newQuantity);
   }
