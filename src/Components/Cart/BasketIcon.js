@@ -7,7 +7,7 @@ export const BasketIcon = () => {
   return (
     <>
       <BsBasket3Fill size="28px" color="#fff" />
-      <span>{totalQuantity}</span>
+      <span>{totalQuantity === 0 ? "" : totalQuantity}</span>
     </>
   )
 }

@@ -634,7 +634,12 @@ button {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
-  background-color: var(--text-white);
+}
+
+.basket__container-empty {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
 }
 
 .basket__info,
@@ -718,10 +723,21 @@ button {
   font-weight: 700;
   font-size: 28px;
   color: var(--text-black);
-  text-transform: capitalize;
 }
 
 .basket__info-remove-btn {
   padding: 10px;
   cursor: pointer;
+}
+
+.basket__empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+
+}
+
+.basket__empty-cart img {
+  width: 450px;
 }
